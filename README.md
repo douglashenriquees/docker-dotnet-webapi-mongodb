@@ -13,6 +13,8 @@
 
 <hr>
 
-* Para executar o projeto em modo **debug** em um container:
-  * Opção executar e depurar
-  * Docker debug in container
+* para executar o projeto em modo **debug** em um container:
+  * opção executar e depurar
+  * docker debug in container
+  * adicionar os arquivos sugeridos pelo vs studio code: **Dockerfile** e **docker-compose.yml**
+  * executar e depudar, opção docker .net core launch
