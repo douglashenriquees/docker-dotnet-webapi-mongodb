@@ -9,7 +9,7 @@
 
 * ```dotnet run --project solution_name.template_project```
 * ```app.UseSwaggerUI(x => { x.SwaggerEndpoint("/swagger/v1/swagger.json", "V1"); x.RoutePrefix = ""; });```
-  * modificação na classe **Program.cs** para redirecionar ao **swagger** ao acessar a url exposta pela api
+  * modificação na classe **Program.cs** para redirecionar ao **swagger** acessando a url exposta na api
 
 <hr>
 
