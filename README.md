@@ -13,7 +13,7 @@
 
 <hr>
 
-* para executar o projeto em modo **debug** em um container:
+* para executar o projeto em modo **debug** via container:
   * opção executar e depurar
   * docker debug in container
   * adicionar os arquivos sugeridos pelo vs studio code: **Dockerfile** e **docker-compose.yml**
