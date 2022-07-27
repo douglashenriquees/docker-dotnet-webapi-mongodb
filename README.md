@@ -17,4 +17,4 @@
   * opção executar e depurar
   * docker debug in container
   * adicionar os arquivos sugeridos pelo vs studio code: **Dockerfile** e **docker-compose.yml**
-  * executar e depudar, opção docker .net core launch
+  * executar e depudar, opção **docker .net core launch**
