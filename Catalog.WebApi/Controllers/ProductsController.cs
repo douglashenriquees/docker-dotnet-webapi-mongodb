@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Catalog.WebApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/v1/[controller]")]
 public class ProductsController : ControllerBase
 {
     private readonly IProductRepository productRepository;
@@ -41,7 +41,7 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
-    [HttpGet("/name")]
+    [HttpGet("name")]
     public async Task<ActionResult> GetByName(string name)
     {
         var products = await productRepository.GetByName(name);
@@ -54,7 +54,7 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
-    [HttpGet("/category")]
+    [HttpGet("category")]
     public async Task<ActionResult> GetByCategory(string category)
     {
         var products = await productRepository.GetByCategory(category);
