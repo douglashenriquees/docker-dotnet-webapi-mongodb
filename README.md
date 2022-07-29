@@ -19,9 +19,13 @@
   * adicionar os arquivos sugeridos pelo vs studio code: **Dockerfile** e **docker-compose.yml**
   * executar e depudar, opção **docker .net core launch**
 
-## MongoDB Container
+## Executando o MongoDB Container
 
-* ```mongo```
-* ```show dbs```
-* ```db.createCollection('Products')```
-* ```use catalogdb```
+* ```docker run -d -p 27017:27017 --name catalog-mongo mongo```
+* ```docker container exec -it catalog-mongo /bin/bash```
+
+## Configurando a Rede da Aplicação
+
+* ```docker network create catalog```
+* ```docker network connect catalog catalog-mongo```
+* ```docker network connect catalog dockerdotnetwebapimongodb-dev```
